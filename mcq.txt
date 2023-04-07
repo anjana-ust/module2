@@ -1,0 +1,205 @@
+class SwitchTest
+ {
+   public static void main(String args[])
+   {
+      for ( int i = 0 ; i < 3 ; i++)
+      {
+         boolean flag  = false;
+         switch (i)
+         {
+            flag  = true;
+         }
+         if ( flag )  System.out.println( i );
+      }
+   }
+}
+It will print 0, 1 and 2	It will not print anything	Compilation error.	Runtime error	None of the above
+Ans : compilation error
+
+class A
+{
+  private int i;
+  public void modifyOther(A a1)
+  {
+    a1.i = 20;  //1
+  }
+}
+ Ans valid
+3. public class MyThread extends Thread 
+{ 
+   String msg = "default"; 
+
+public MyThread(String s) 
+   { 
+      msg = s; 
+   } 
+   public void run() 
+   { 
+      System.out.println(msg); 
+   } 
+   public static void main(String args[]) 
+   { 
+      new MyThread("String1").run(); 
+      new MyThread("String2").run(); 
+      System.out.println("end"); 
+   } 
+} 
+The program will fail to compile	
+It will always print 'String1'  'String2' and 'end', in that order	
+It will always print 'String1'   'String2' in random order followed by 'end'	
+It will always print 'end' first	
+No order is guaranteed
+
+ Ans : It will always
+class TestClass
+{
+   int i;
+   public TestClass(int i) { this.i = i;  }
+   public String toString()
+   {
+       if(i == 0) return null;
+       else return """"+i;
+   }
+   public static void main(String[ ] args)
+   {
+      TestClass t1 = new TestClass(0);
+      TestClass t2 = new TestClass(2);
+      System.out.println(t2);
+      System.out.println(""""+t1);
+   }
+}
+What will be the output of the following program?"
+
+It will throw NullPointerException when run	It will not compile	It will print 2 and then will throw NullPointerException	It will print 2 and null	None of the above
+
+Ans : It will print 2 and null
+class A{
+   A() {  print();   }
+   void print() { System.out.println(""A""); }
+}
+class B extends A{
+   int i =   Math.round(3.5f);
+   public static void main(String[] args)  {
+      A a = new B();
+      a.print();
+   }
+   void print() { System.out.println(i); }
+}
+
+It will print A, 4.	It will print A, A	It will print 0, 4	It will print 4, 4	None of the above
+
+
+public class TestClass
+{
+  public static void main(String[] args)
+  {
+     for : for(int i = 0; i< 10; i++)
+     {
+        for (int j = 0; j< 10; j++)
+        {
+             if ( i+ j > 10 )  break for;
+        }
+        System.out.println( ""hello"");
+     }
+  }
+}
+Ans : compilation error
+ class TestClass
+		   {
+		      public static void main(String args[ ] )
+		      {
+		         float f = 6.5f;
+		         System.out.println( Math.ceil(f) );  //1
+		         System.out.println( Math.round(f) ); //2
+		         System.out.println( Math.floor(f) ); //3
+		         System.out.println( (int) Math.ceil(f) );  //4
+		         System.out.println( (int) Math.floor(f) ); //5
+		      }
+		   }
+The line labeled 1	The line labeled 2	The line labeled 3	The line labeled 4	The line labeled 5
+Ans : the line labeled 5
+ 
+boolean[] b1 = new boolean[2];
+   boolean[] b2 = {true , false};
+   System.out.println( "" + (b1[0] == b2[0]) + ", "+ (b1[1] == b2[1])  );
+Ans : false,true
+
+class Test
+{
+   public static void main(String[] args) throws Exception
+   {
+      int[] a = null;
+      int i = a [ m1() ];
+   }
+   public static int m1() throws Exception
+   {
+      throw new Exception("Some Exception");
+   }
+}
+Ans : some Exception
+Which of the following statements are true? 	
+To provide threading behaviour a class must extend Thread class
+	To provide threading behaviour a class must explicitly implement Runnable interface
+	Threads created by user are always non-daemon threads
+	Thread created internally by the JVM are always daemon threads
+	None of the above are correct
+Ans : c
+public class TestClass
+{
+
+  static String str = ""Hello World"";
+  public static void changeIt(String s)
+  {
+    s = ""Good bye world"";
+  }
+  public static void main(String[] args)
+  {
+    changeIt(str);
+    System.out.println(str);
+  }
+}
+Ans Hello World
+public class Main
+{
+	public static void main(String[] args) {
+
+public class TestClass{
+   public static void main(String args[ ] )
+   {
+      String s = ""hello"";
+      StringBuffer sb = new StringBuffer(""hello"");
+      sb.reverse();
+      s.reverse();
+      if( s == sb.toString() )  System.out.println(""Equal"");
+      else System.out.println(""Not Equal"");
+      }
+}
+Ans: compilation error
+
+class NewException extends Exception {}
+
+class AnotherException extends Exception {}
+
+public class ExcceptionTest
+{
+   public static void main(String [] args) throws Exception
+   {
+      try
+      {
+         m2();
+      }
+      finally{ m3(); }
+    }
+    public static void m2() throws NewException{  throw new NewException();  }
+    public static void m3() throws AnotherException{  throw new AnotherException();  }
+}
+It will compile but will throw AnotherException when run	It will compile but will throw NewException when run	It will compile and run without throwing any exceptions	It will not compile	
+
+Ans A
+the m2() will not excecut because it has no catch
+
+A Functional Interface is a an interface which has
+
+0 methods	only 1 abstract method and other default methods	only abstract methods	has both abstract and concrete methods
+
+Ans : b

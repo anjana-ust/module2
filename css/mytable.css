@@ -1,0 +1,13 @@
+table{
+    border: 1px solid  black;
+    text-align: center;
+    font-size: larger;
+    background-color: aquamarine;
+}
+tr{
+ font-size: bold;
+ color: blue;
+}
+td{
+    font-style: italic; background-color: blanchedalmond;align-items: left;
+}

@@ -1,0 +1,74 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+}
+body{
+    border-top: rgb(7, 7,7);
+    border-style: solid;
+    border-color:darksalmon;
+    border-width: 3px;
+     background-color:cadetblue;
+
+}
+div{
+    width: 1100px;
+    height:150px;
+    border: 10px;
+    border-color:black;
+    border-style:ridge;
+    padding: 25px;
+    margin: 10px;
+}
+#first{
+    background-color: cornflowerblue;
+}
+#second{
+    background-color: coral;
+}
+#third{
+    background-color: dimgrey;
+}
+#p-1{
+    background-color: darkcyan;
+    /* font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Fasthand', cursive; */
+}
+ /* #p-1>span{
+    color: red;
+}  */
+.p1{
+    background-color: crimson;
+}   
+.first para{
+    font-size:xx-small;
+     font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Fasthand', cursive; 
+}
+
+.p3{
+    font-size: x-large;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Fasthand', cursive;
+background-color: white;
+}
+#p-2{
+    font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Fasthand', cursive;
+color:aliceblue;
+}
+span{
+    color:green;
+}
+/* #p-1>span{
+    color: red;
+} */
+#first span{
+    color: red;
+}
+#second span{
+    color: aqua;
+}

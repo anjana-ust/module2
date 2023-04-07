@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Radio Button Validation</title>
+  </head>
+  <body>
+    <form>
+      <label for="male">Male</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="female">Female</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <button type="submit" onclick="validateRadio()">Submit</button>
+    </form>
+    <script>
+      function validateRadio() {
+        const maleRadio = document.getElementById('male');
+        const femaleRadio = document.getElementById('female');
+        if (maleRadio.checked || femaleRadio.checked) {
+          alert('Radio button selected');
+        } else {
+          alert('Please select a radio button');
+        }
+      }
+    </script>
+  </body>
+</html>
